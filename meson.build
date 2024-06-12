@@ -1,5 +1,7 @@
 project('Dear ImGUI', 'cpp', default_options: ['default_library=static'])
 
+add_project_arguments('-DIMGUI_IMPL_OPENGL_ES2', language : 'cpp')
+
 imgui_inc = include_directories('./backends', '.')
 
 # subproject('glfw')
