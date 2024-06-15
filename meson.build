@@ -9,7 +9,6 @@ imgui_inc = include_directories('./backends', '.')
 # gl = dependency('gl')
 deps = [
   dependency('sdl2'),
-  dependency('SDL2_image'),
   dependency('gl'),
   dependency('threads'),
 ]
