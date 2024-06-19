@@ -4,9 +4,6 @@ add_project_arguments('-DIMGUI_IMPL_OPENGL_ES2', language : 'cpp')
 
 imgui_inc = include_directories('./backends', '.')
 
-# subproject('glfw')
-# glfwDep = dependency('glfw')
-# gl = dependency('gl')
 deps = [
   dependency('sdl2'),
   dependency('gl'),
@@ -20,7 +17,7 @@ sources = [
     'imgui_demo.cpp',
     'imgui_widgets.cpp',
     './backends/imgui_impl_sdl2.cpp',
-    './backends/imgui_impl_sdlrenderer2.cpp',
+    # './backends/imgui_impl_sdlrenderer2.cpp',
     './backends/imgui_impl_opengl3.cpp',
 ]
 
